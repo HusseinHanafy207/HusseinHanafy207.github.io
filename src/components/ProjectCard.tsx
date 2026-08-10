@@ -16,7 +16,7 @@ export function ProjectCard({ project }: Props) {
         <h3 className="display text-[1.55rem] leading-tight text-ink sm:text-[1.75rem]">
           {hasDetail ? (
             <Link
-              href={`/projects/${project.slug}`}
+              href={`/projects/${project.slug}/`}
               className="transition-colors hover:text-accent"
             >
               {project.title}
@@ -35,7 +35,7 @@ export function ProjectCard({ project }: Props) {
       <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm font-semibold md:justify-end">
         {hasDetail ? (
           <Link
-            href={`/projects/${project.slug}`}
+            href={`/projects/${project.slug}/`}
             className="link-underline text-accent"
           >
             Details

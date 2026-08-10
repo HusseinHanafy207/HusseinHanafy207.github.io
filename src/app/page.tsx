@@ -88,7 +88,7 @@ export default function HomePage() {
           title="Projects"
           action={
             <Link
-              href="/projects"
+              href="/projects/"
               className="link-underline text-sm font-semibold text-accent"
             >
               All projects →
@@ -101,7 +101,7 @@ export default function HomePage() {
           <div>
             <h3 className="display text-[1.55rem] leading-tight text-ink sm:text-[1.9rem]">
               <Link
-                href={`/projects/${featured.slug}`}
+                href={`/projects/${featured.slug}/`}
                 className="transition-colors hover:text-accent"
               >
                 {featured.title}
@@ -114,7 +114,7 @@ export default function HomePage() {
           </p>
           <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm font-semibold md:justify-end">
             <Link
-              href={`/projects/${featured.slug}`}
+              href={`/projects/${featured.slug}/`}
               className="link-underline text-accent"
             >
               Details
