@@ -4,6 +4,8 @@ export const site = {
   role: "Senior Computer Engineering student",
   tagline:
     "AI researcher interested in generative AI, diffusion models, and reinforcement learning.",
+  collaboration:
+    "Open to research collaborations and project opportunities — feel free to reach out.",
   summary:
     "Senior Computer Engineering student in a dual-degree program between Egypt University of Informatics and Purdue University. I build and evaluate deep generative and decision-making systems in PyTorch, with an emphasis on rigorous experimentation and reproducible results.",
   email: "hanafy@purdue.edu",
@@ -46,6 +48,24 @@ export const education = [
       "Probability",
       "Data Structures & Algorithms",
     ],
+  },
+] as const;
+
+export const awards = [
+  {
+    title: "9th nationally — Math section",
+    detail:
+      "Ranked 9th nationally in Egypt’s secondary-school exams (Math section), 2022.",
+  },
+  {
+    title: "Full scholarship — Egypt University of Informatics",
+    detail:
+      "Awarded a full scholarship to study at Egypt University of Informatics, 2022 (sponsored by Microsoft).",
+  },
+  {
+    title: "Full scholarship — Purdue University",
+    detail:
+      "Awarded a full scholarship to study at Purdue University for the senior year under the dual-degree agreement (sponsored by Microsoft).",
   },
 ] as const;
 

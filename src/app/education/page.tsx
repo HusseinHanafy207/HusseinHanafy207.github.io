@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { SectionHeading } from "@/components/SectionHeading";
-import { education } from "@/content/site";
+import { awards, education } from "@/content/site";
 
 export const metadata: Metadata = {
   title: "Education",
@@ -33,6 +33,22 @@ export default function EducationPage() {
             </p>
           </article>
         ))}
+      </div>
+
+      <div className="mt-14 border-t border-line pt-10">
+        <h2 className="display text-2xl text-ink sm:text-3xl">
+          Awards & honors
+        </h2>
+        <ul className="mt-6 space-y-5">
+          {awards.map((award) => (
+            <li key={award.title} className="border-l-2 border-accent pl-4">
+              <p className="font-semibold text-ink">{award.title}</p>
+              <p className="mt-1 text-sm leading-relaxed text-ink-soft">
+                {award.detail}
+              </p>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );

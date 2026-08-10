@@ -3,6 +3,7 @@ import { ProjectCard } from "@/components/ProjectCard";
 import { SectionHeading } from "@/components/SectionHeading";
 import {
   activities,
+  awards,
   education,
   experience,
   getFeaturedProject,
@@ -50,9 +51,20 @@ export default function HomePage() {
             <p className="text-lg leading-relaxed text-ink-soft sm:text-xl">
               {site.tagline}
             </p>
+            <p className="mt-4 text-base leading-relaxed text-ink-soft">
+              {site.collaboration}
+            </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
                 className="btn btn-primary"
+                href={`mailto:${site.email}?subject=${encodeURIComponent(
+                  "Research / project collaboration",
+                )}`}
+              >
+                Contact me
+              </a>
+              <a
+                className="btn btn-ghost"
                 href={site.resumeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -74,9 +86,6 @@ export default function HomePage() {
                 rel="noopener noreferrer"
               >
                 LinkedIn
-              </a>
-              <a className="btn btn-ghost" href={`mailto:${site.email}`}>
-                Email
               </a>
             </div>
           </div>
@@ -219,6 +228,22 @@ export default function HomePage() {
               </p>
             </article>
           ))}
+        </div>
+
+        <div className="mt-14 border-t border-line pt-10">
+          <h3 className="display text-2xl text-ink sm:text-3xl">
+            Awards & honors
+          </h3>
+          <ul className="mt-6 space-y-5">
+            {awards.map((award) => (
+              <li key={award.title} className="border-l-2 border-accent pl-4">
+                <p className="font-semibold text-ink">{award.title}</p>
+                <p className="mt-1 text-sm leading-relaxed text-ink-soft">
+                  {award.detail}
+                </p>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
