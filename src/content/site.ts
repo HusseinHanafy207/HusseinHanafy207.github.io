@@ -62,9 +62,9 @@ export const awards = [
       "Selected by the Elmore Family School of Electrical and Computer Engineering at Purdue University for a $3,000 scholarship for the 2026–27 academic year.",
   },
   {
-    title: "9th nationally — Math section",
+    title: "Full scholarship — Purdue University",
     detail:
-      "Ranked 9th nationally in Egypt’s secondary-school exams (Math section), 2022.",
+      "Awarded a full scholarship to study at Purdue University for the senior year under the dual-degree agreement (sponsored by Microsoft).",
   },
   {
     title: "Full scholarship — Egypt University of Informatics",
@@ -72,9 +72,9 @@ export const awards = [
       "Awarded a full scholarship to study at Egypt University of Informatics, 2022 (sponsored by Microsoft).",
   },
   {
-    title: "Full scholarship — Purdue University",
+    title: "9th nationally — Math section",
     detail:
-      "Awarded a full scholarship to study at Purdue University for the senior year under the dual-degree agreement (sponsored by Microsoft).",
+      "Ranked 9th nationally in Egypt’s secondary-school exams (Math section), 2022.",
   },
 ] as const;
 
